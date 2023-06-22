@@ -1,7 +1,7 @@
 /*
- * File: run_monty.c
- * Auth: Bennett Dixon
- *       Brennan D Baraban
+ * File: run_montyrun.c
+ * Auth: Sudi Ireri
+ *       Reagan Mamesa
  */
 #include <stdio.h>
 #include "monty.h"
@@ -85,12 +85,12 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 		{"pint", _pint},
 		{"pop", _pop},
 		{"swap", _swap},
-		{"add", monty_add},
+		{"add", _add},
 		{"nop", _nop},
-		{"sub", monty_sub},
-		{"div", monty_div},
-		{"mul", monty_mul},
-		{"mod", monty_mod},
+		{"sub", _sub},
+		{"div", _div},
+		{"mul", _mul},
+		{"mod", _mod},
 		{"pchar", _pchar},
 		{"pstr", _pstr},
 		{"rotl", monty_rotl},
